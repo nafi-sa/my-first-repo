@@ -4,12 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First GitHub Repo</title>
+    <title>My First GitHub Repo - Demo Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>First Heading</h1>
-    <h2>Second Heading</h2>
-    <p>This is  a paragraph</p>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href="index.html"> My Website</a>
+            </div>
+            <nav>
+                <ul id="Menu-items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><button>Login</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div id ="login-form" class="login-page">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" onclick="login()" class="toggle-btn">Login</button>
+                    <button type="button" onclick="register()"class="toggle-btn">Register</button>
+                </div>
+                <form id="login" class="input-group-login">
+                    <input type="text" class="input-feild" placeholder="Enter Enial" required>
+                    <input type="password" class="input-feild" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>Remember Password </span>
+                    <button type="submit" class="submit-btn">Login</button>
+                </form>
+                <form id="register" class="input-group-register">
+                    <input type="text"class="input-feild" placeholder="First Name" required>
+                    <input type="text" class="input-feild" placeholder="Last Name" required>
+                    <input type="email" class="input-feild" placeholder="Enter Email" required>
+                    <input type="password" class="input-feild" placeholder="Enter Password" required>
+                    <input type="password" placeholder="Confirm Password" required>
+                    <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                    <button type="submit" class="submit-btn">Register</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
